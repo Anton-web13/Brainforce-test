@@ -4,6 +4,7 @@
 * {
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     background: #E5E5E5;
@@ -1828,12 +1829,140 @@ body{
 
                                                                                     /*@media only screen and (max-width: 320px)*/
 @media only screen and (max-width: 320px) {
+    
+.wrapper{
+    width: 67px;
+    height: 34px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #FFDB2D;
+}
+
+
+            .user-menu {
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding: 0px 0px 0px 0px;
+            }
+                .user-drop-menu {
+                    display: none;
+                    position: absolute;
+                    padding: 0px 0px 0px 0px;
+                    left: -140px;
+                    bottom: -77px;
+                    z-index: 1;
+                    font-size: 20px;
+                    list-style-type: none;
+                }
+
+
+                .user-menu input#user-menu:checked ~ .user-drop-menu {                          /*Показ скрытых элементов*/
+                    display: block;
+                }
+
+                .user-menu input#user-menu:checked ~ label span svg {
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
+
+                    .user-name {
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 120%;
+                        letter-spacing: 0.05em;
+                        color: #333333;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                    .user-menu:hover .wrapper  {background-color: #FFEB8B;}
+
+
+
+.checkbox {
+margin: -6px;
+position: relative;
+z-index: -1;
+opacity: 0
+}
+
+
+.input-search-block {
+    width: 0px;
+    display: flex;
+    align-items: center;
+}
+    .input-search-block input {
+        width: 244px;
+        height: 30px;
+        border-radius: 10px 0 0 10px;
+        border: 1px solid rgba(177, 0, 50, 0.8);
+        padding: 0px 0px;
+    }
+    .input-search-block input::placeholder {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.015em;
+        color: #C4C4C4;
+
+    }
+    .input-search-block button {
+        width: 36px;
+        height: 30px;
+        background: #fff;
+        border-radius: 0 10px 10px 0;
+        border: 1px solid rgba(177, 0, 50, 0.8);
+        border-width: 1px 1px 1px 1px;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     body{
         background-color: #FFFFFF;
     }
     .main{
-        position: relative;
-        max-width: 100vw;
+        position: absolute;
+        max-width: 100%;
     }
     .main_Main{
         position: relative;
@@ -1848,8 +1977,9 @@ body{
         max-height: 100px;
     }
     .Header_Number1{
+        display: flex;
         position: relative;
-        max-width: 60%;
+        max-width: 100%;
         height: 23px;
         left: 20%;
         top: 18px;
@@ -1880,7 +2010,7 @@ body{
     }
     .dropbtn1{
         max-width: 100%;
-        height: 34px;
+        height: 33px;
         font-size: 80%;
     }
     .main_Header_Consultation{
@@ -2498,6 +2628,7 @@ body{
         text-align: center;
         object-fit: cover;
         z-index: 1;
+        background: url(map21.png);
     }
 
 
@@ -2576,6 +2707,102 @@ body{
 
 
 @media (min-width: 1280px) {                               /*@media (min-width: 1920px)*/
+
+
+.wrapper{
+    width: 87px;
+    height: 43px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #FFDB2D;
+}
+
+
+            .user-menu {
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding: 120px 0 120px 0px;
+            }
+                .user-drop-menu {
+                    display: none;
+                    position: absolute;
+                    padding: 50px 0px 10px 10px;
+                    left: -130px;
+                    bottom: 50px;
+                    z-index: 1;
+                    font-size: 20px;
+                    list-style-type: none;
+                }
+
+
+                .user-menu input#user-menu:checked ~ .user-drop-menu {                          /*Показ скрытых элементов*/
+                    display: block;
+                }
+
+                .user-menu input#user-menu:checked ~ label span svg {
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
+
+                    .user-name {
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 120%;
+                        letter-spacing: 0.05em;
+                        color: #333333;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                    .user-menu:hover .wrapper  {background-color: #FFEB8B;}
+.checkbox {
+margin: 0px;
+position: absolute;
+z-index: -1;
+opacity: 0
+}
+
+
+.input-search-block {
+    width: 210px;
+    display: flex;
+    align-items: center;
+}
+    .input-search-block input {
+        width: 294px;
+        height: 36px;
+        border-radius: 10px 0 0 10px;
+        border: 1px solid rgba(177, 0, 50, 0.8);
+        padding: 0px 0px;
+    }
+    .input-search-block input::placeholder {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.015em;
+        color: #C4C4C4;
+
+    }
+    .input-search-block button {
+        width: 36px;
+        height: 36px;
+        background: #fff;
+        border-radius: 0 10px 10px 0;
+        border: 1px solid rgba(177, 0, 50, 0.8);
+        border-width: 1px 1px 1px 0;
+        cursor: pointer;
+    }
+
+
+
+
+
     .main{
         max-width: 100%;
     }
@@ -2651,8 +2878,12 @@ body{
     .main_Header_Consultation{
         left: 1078px;
     }
+
     .Header_Search{
+        max-width: 20%;
+        height: 33px;
         right: 215px;
+        top: 33%;
     }
     .Header_Streak{
         left: 966px;
